@@ -117,5 +117,5 @@ var goods = [
                 tbody.appendChild(tr);
         }
         table.appendChild(tbody);
-        document.getElementById('table-lizing-traktor').appendChild(table);
+        document.getElementById('table1').appendChild(table);
 
