@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание намбер два</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro">
+      <div><p class= "logotext">Датчик<br>спокойствия</p>
+      </div>
+      <div class= "textinintro"><P>Комплекс из камеры и мобильного приложения, который помогает в любой момент убедиться, что с близкими и домом всё в порядке.</P>
+      </div>
+    </div>
+    <div class = "cambox">
+      <div class = "cam1">
+        <div class="camfoto1"></div>
+      </div>
+      <div class = "cam2">
+        <div class="camfoto2"></div> 
+      </div>
+    <a class="button1" href="./st1.html">ПОДРОБНЕЕ</a>
+    <a class="button2" href=./st2.html>ПОДРОБНЕЕ</a>
+    </div>
+    
+    
+<P class= "priobresti">Приобрести</P>
+
+<div class="wrap"> 
+            <div class="blockbybox"></div>
+            <div class="blockbybox"></div>
+            <div class="blockbybox"></div>
+            <div class="blockbybox"></div>
+</div>
+  <div class="fone">
+    <div><p class= "fonetext">Оставьте заявку, и мы позвоним вам в ближайшее время</p></div>
+  <script type="text/javascript">
+
+  function mask(inputName, mask, evt) {
+    try {
+      var text = document.getElementById(inputName);
+      var value = text.value;
+ 
+      // If user pressed DEL or BACK SPACE, clean the value
+      try {
+        var e = (evt.which) ? evt.which : event.keyCode;
+        if ( e == 46 || e == 8 ) {
+          text.value = "";
+          return;
+        }
+      } catch (e1) {}
+      var literalPattern=/[0\*]/;
+      var numberPattern=/[0-9]/;
+      var newValue = "";
+      for (var vId = 0, mId = 0 ; mId < mask.length ; ) {
+        if (mId >= value.length)
+          break;
+        // Number expected but got a different value, store only the valid portion
+        if (mask[mId] == '0' && value[vId].match(numberPattern) == null) {
+          break;
+        }
+        // Found a literal
+        while (mask[mId].match(literalPattern) == null) {
+          if (value[vId] == mask[mId])
+            break;
+ 
+        newValue += mask[mId++];
+      }
+      newValue += value[vId++];
+      mId++;
+    }
+ 
+    text.value = newValue;
+  } catch(e) {}
+}
+</script>
+
+<form id="form1">
+<input class= "inputfone" type="text" id="zipCode" onkeyup="javascript:mask('zipCode', '+7(000)000-00-00', event);" value="+7(___)___-____" >
+</form>
+</div>
+
+
+
+
+</body>
+</html>
