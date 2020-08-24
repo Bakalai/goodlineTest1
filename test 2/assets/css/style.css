@@ -11,7 +11,7 @@ body {
 *:after {
 	box-sizing: border-box;
 }
-/*Контейнер, пока хз нахуя
+/*Контейнер, пока хз зачем
 .container {
 	width: 100%;
 	max-width: 1120px;
